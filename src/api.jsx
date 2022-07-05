@@ -37,6 +37,7 @@ const categories = [
     path: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
   },
 ];
+console.log(categories);
 
 export const getMovies = async (path) => {
   try {
