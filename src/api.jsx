@@ -9,7 +9,7 @@ const categories = [
   {
     name: "originalsNetflix",
     title: "Originais Netflix",
-    path: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
+    path: `/discover/tv?api_key=${API_KEY}&with_networks=213&language=pt-BR`,
   },
   {
     name: "topRated",
@@ -19,22 +19,22 @@ const categories = [
   {
     name: "comedy",
     title: "Comédias",
-    path: `/discover/tv?api_key=${API_KEY}&with_genres=35`,
+    path: `/discover/tv?api_key=${API_KEY}&with_genres=35&language=pt-BR`,
   },
   {
     name: "horror",
     title: "Terror",
-    path: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
+    path: `/discover/movie?api_key=${API_KEY}&with_genres=27&language=pt-BR`,
   },
   {
     name: "romances",
     title: "Romances",
-    path: `/discover/tv?api_key=${API_KEY}&with_genres=10749`,
+    path: `/discover/tv?api_key=${API_KEY}&with_genres=10749&language=pt-BR`,
   },
   {
     name: "documentaries",
     title: "Documentários",
-    path: `/discover/tv?api_key=${API_KEY}&with_genres=99`,
+    path: `/discover/tv?api_key=${API_KEY}&with_genres=99&language=pt-BR`,
   },
 ];
 console.log(categories);
@@ -48,3 +48,5 @@ export const getMovies = async (path) => {
     console.log("error getMovies", error);
   }
 };
+
+export default categories;
