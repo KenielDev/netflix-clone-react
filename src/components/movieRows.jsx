@@ -2,6 +2,7 @@ import React from "react";
 import { getMovies } from "../api";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+
 import "/src/App.css";
 
 const imageHost = "https://image.tmdb.org/t/p/original/";

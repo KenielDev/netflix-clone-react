@@ -30,9 +30,7 @@ function Banner() {
       <div className="grid grid-cols-2">
         <div className="text-white text-left mt-[200px] ml-[30px]">
           <div className="gap-y-10">
-            <div>
-              <h1>titulo</h1>
-            </div>
+            <div className="text-xl">{categories.title}</div>
             <div>
               <h2>top em series e filmes</h2>
             </div>
@@ -48,7 +46,9 @@ function Banner() {
               <button className="rounded bg-white p-2 text-black font-semibold">
                 Assistir
               </button>
-              <button>Mais informações</button>
+              <button className="rounded bg-white p-2 text-black font-semibold">
+                Mais informações
+              </button>
             </div>
           </div>
         </div>
