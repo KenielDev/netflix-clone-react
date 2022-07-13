@@ -6,6 +6,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import "/src/App.css";
 
 const imageHost = "https://image.tmdb.org/t/p/original/";
+
 function Row({ title, path }) {
   const [movies, setMovies] = React.useState([]);
 
@@ -41,7 +42,7 @@ function Row({ title, path }) {
   }, [path]);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <h2 className="text-2xl py-4 text-left ml-4 font-bold text-white">
         {title}
       </h2>
@@ -64,7 +65,7 @@ function Row({ title, path }) {
         {movies?.map((movie) => {
           return (
             <img
-              className="w-[full] cursor-pointer max-h-[250px] hover:scale-125 ease-in-out duration-300"
+              className="w-full cursor-pointer max-h-[250px] hover:scale-110 ease-in-out duration-300 py-5"
               key={movie.id}
               src={`${imageHost}${movie.poster_path}`}
               alt={movie.name}

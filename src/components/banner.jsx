@@ -22,7 +22,7 @@ function Banner() {
 
   return (
     <header
-      className="bg-cover h-[750px] bg-gradient-to-t from-black to-white"
+      className="bg-cover bg-gradient-to-b to-black h-[750px]"
       style={{
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
       }}
@@ -30,23 +30,17 @@ function Banner() {
       <div className="grid grid-cols-2">
         <div className="text-white text-left mt-[200px] ml-[30px]">
           <div className="gap-y-10">
-            <div className="text-xl">{categories.title}</div>
-            <div>
-              <h2>top em series e filmes</h2>
+            <div className="text-4xl font-semibold w-2/3 p-4">
+              {movie?.name}
             </div>
-            <div>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Perspiciatis at ipsum, inventore sunt nobis molestiae quis
-                similique quae facilis necessitatibus explicabo natus, veniam
-                voluptate! Blanditiis tenetur debitis eligendi repellat aut.
-              </p>
+            <div className="text-[24px] w-2/3 p-4">
+              <p>{movie?.overview}</p>
             </div>
-            <div>
-              <button className="rounded bg-white p-2 text-black font-semibold">
+            <div className="p-4">
+              <button className="rounded text-[24px] bg-white px-8 py-3 p-4 text-black font-semibold">
                 Assistir
               </button>
-              <button className="rounded bg-white p-2 text-black font-semibold">
+              <button className="rounded text-white text-[24px] px-8 py-3 ml-4 bg-[#333436] font-semibold">
                 Mais informações
               </button>
             </div>
