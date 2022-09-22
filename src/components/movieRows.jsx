@@ -59,7 +59,7 @@ function Row({ title, path }) {
         />
       </div>
       <div
-        className="ml-4 flex items-center justify-center gap-3 ease-in-out duration-300"
+        className="ml-4 flex items-center justify-center gap-3 ease-in-out duration-300 "
         style={{ marginLeft: scrollX }}
       >
         {movies?.map((movie) => {
